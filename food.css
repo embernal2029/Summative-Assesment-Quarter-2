@@ -1,0 +1,37 @@
+.hero{
+    background: url('https://www.thepoortraveler.net/wp-content/uploads/2016/05/La-Union-Food-Trip.jpg') no-repeat center center;
+    background-size: cover;
+    background-position: center top;
+    height: 60vh;
+}
+.hero h1, .hero p {
+color: white;
+}
+
+.feature-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.feature-card:hover {
+    transform: scale(1.06);
+    z-index: 5;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+}
+
+.card-img-top {
+height: 250px;
+object-fit: cover;
+}
+
+
+.food-section, .drink-section {
+color: #333;
+}
+
+
+@media (max-width: 768px) {
+.hero {
+height: 40vh;
+}
+}

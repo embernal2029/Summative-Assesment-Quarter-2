@@ -1,0 +1,43 @@
+.hero {
+  background-color: #1581BF;
+  height: 60vh;
+}
+
+.hero h1, .hero p {
+  color: white;
+}
+
+.author-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.author-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+}
+
+.card-img-top {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.references-section ul {
+  list-style: disc;
+  margin-left: 2rem;
+}
+
+.references-section a {
+  color: #1581BF;
+  text-decoration: none;
+}
+
+.references-section a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    height: 40vh;
+  }
+}

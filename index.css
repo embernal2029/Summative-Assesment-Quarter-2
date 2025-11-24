@@ -1,0 +1,59 @@
+.hero {
+background: url('https://www.willflyforfood.net/wp-content/uploads/2018/06/la-union-travel-guide-san-juan-1200x800.jpg') center/cover no-repeat;
+height: 90vh;
+}
+
+.feature-card {
+transition: transform 0.28s cubic-bezier(.2,.9,.2,1), opacity 0.28s ease, box-shadow 0.28s ease;
+transform-origin: center center;
+cursor: pointer;
+}
+
+a {
+    text-decoration: none !important;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: none !important;
+}
+
+
+.feature-card img {
+height: 220px;
+object-fit: cover;
+}
+
+.feature-card.hovered {
+transform: scale(1.06);
+z-index: 5;
+box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+}
+
+.feature-card.dim {
+opacity: 0.32;
+transform: scale(0.99);
+}
+
+@media (max-width: 1024px) {
+.hero { height: 70vh; }
+}
+@media (max-width: 768px) {
+.hero {
+height: 60vh;
+}
+.hero h1 {
+font-size: 2rem;
+}
+}
+
+
+@media (max-width: 576px) {
+.hero {
+height: 50vh;
+}
+.hero p {
+font-size: 0.9rem;
+}
+.feature-card.dim { opacity: 1; transform: none; }
+}
