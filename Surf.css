@@ -1,3 +1,16 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    margin-top: auto;
+}
+
 .hero h1 {
 color: white;
 }
@@ -31,4 +44,5 @@ object-fit: cover;
 .hero {
 height: 40vh;
 }
+
 }
